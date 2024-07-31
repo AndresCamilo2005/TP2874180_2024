@@ -1,13 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mi blog</title>
+    <title>Mi Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header, footer {
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            margin: 10px;
+        }
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+        }
+        .image, .text {
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .image {
+            flex: 1;
+        }
+        .text {
+            flex: 2;
+        }
+    </style>
 </head>
 <body>
-    <header>es es mi header codificar aca</header>
-    <body> este es mi body codificar aca</body>
-    <footer>este es mifooter codificar aca</footer>
+    <header>
+        <h1>Mi Blog</h1>
+        <p>Quién soy</p>
+    </header>
+    <main>
+        <div class="main-content">
+            <div class="image">
+                <img src= "submarino.png"alt="Imagen del blog" style="width: 100%;">
+            </div>
+            <div class="text">
+                <h2>Texto</h2>
+                <p>Aquí va el contenido principal del blog.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Contactos: <a href="mailto:tuemail@example.com">tuemail@example.com</a></p>
+    </footer>
 </body>
 </html>
